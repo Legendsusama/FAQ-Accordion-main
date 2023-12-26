@@ -1,0 +1,110 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+  }
+
+
+  .main {
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    position: relative;
+    overflow: hidden;
+    padding:  10px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .main .backgroundImg {
+
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background-size: cover;
+    width: 100%;
+
+  }
+
+  .box {
+    max-width: 490px;
+    width: 100%;
+    z-index: 1;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 18px;
+    box-shadow: 0px 0px 30px  hsla(292, 16%, 49%, 0.2);
+    padding: 20px;
+    margin-top: 140px;
+
+  }
+
+  .box .title {
+
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+  }
+
+  .box .title h2 {
+    padding-left: 15px;
+    font-size: 45px;
+    font-weight: 700;
+
+  }
+
+  .box .accordion-item {
+    border-bottom: 0.5px solid hsla(292, 16%, 49%, 0.2);
+    padding: 15px 0;
+  }
+
+  .box .accordion-item:last-child {
+    border: none;
+  }
+
+  .box .accordion-item .accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .box .accordion-item .accordion-title h3 {
+    font-size: 16px;
+  }
+
+
+
+  .box .accordion-item .accordion-title img {
+    cursor: pointer;
+  }
+
+
+
+  .box .accordion-item .accordion-content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+  }
+
+  .box .accordion-item .accordion-content p{
+    padding: 15px 0;
+    font-size: 1rem;
+    line-height: 22px;
+    color: hsl(292, 16%, 49%);
+  }
+
+  @media screen and (max-width : 550px){
+    .main .backgroundImg {
+
+      content : url('assets/images/background-pattern-mobile.svg');
+
+    }
+
+  }
